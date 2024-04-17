@@ -96,14 +96,6 @@ def get_weather(place, unit):
             st.write("Sunset Time (GMT):", sunset)
 
             display_weather_conditions(w)
-            # Check for specific weather conditions
-            #st.write("Impending Rain:", "Yes" if "rain" in w.detailed_status.lower() else "No")
-            #st.write("Clear Skies:", "Yes" if "clear" in w.detailed_status.lower() else "No")
-            #st.write("Fog:", "Yes" if "fog" in w.detailed_status.lower() else "No")
-            #st.write("Clouds:", "Yes" if "clouds" in w.detailed_status.lower() else "No")
-            #st.write("Snow:", "Yes" if "snow" in w.detailed_status.lower() else "No")
-            #st.write("Storm:", "Yes" if "storm" in w.detailed_status.lower() else "No")
-            #st.write("Tornado:", "Yes" if "tornado" in w.detailed_status.lower() else "No")
 
     except Exception as e:
         st.write("An error occurred:", e)
